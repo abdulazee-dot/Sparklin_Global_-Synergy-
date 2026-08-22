@@ -1,373 +1,282 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Sparklin Global Synergy | Contract & Service Solutions</title>
+<title>Sparklin Global Synergy</title>
 
-  <meta name="description" content="Sparklin Global Synergy provides supply chain management, real estate and facility management, and auction and disposal services across Nigeria.">
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
 
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      scroll-behavior: smooth;
-    }
+html{
+  scroll-behavior:smooth;
+}
 
-    body {
-      font-family: Arial, Helvetica, sans-serif;
-      background: #050505;
-      color: #ffffff;
-      line-height: 1.6;
-    }
+body{
+  font-family:Arial,sans-serif;
+  background:#f5f7f8;
+  color:#222;
+  line-height:1.6;
+}
 
-    header {
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-      background: rgba(0, 0, 0, 0.95);
-      border-bottom: 1px solid #19ff4a;
-    }
+header{
+  background:#071426;
+  color:white;
+  text-align:center;
+  padding:20px;
+}
 
-    .nav {
-      max-width: 1200px;
-      margin: auto;
-      padding: 15px 20px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
+.logo{
+  width:230px;
+  max-width:90%;
+  height:auto;
+  margin-bottom:10px;
+}
 
-    .logo {
-      font-size: 22px;
-      font-weight: bold;
-      color: #19ff4a;
-    }
+header h1{
+  color:#20d65a;
+  font-size:30px;
+}
 
-    .logo span {
-      display: block;
-      color: white;
-      font-size: 11px;
-      letter-spacing: 2px;
-    }
+nav{
+  background:#123b66;
+  text-align:center;
+  padding:14px;
+}
 
-    nav a {
-      color: white;
-      text-decoration: none;
-      margin-left: 20px;
-      font-size: 14px;
-    }
+nav a{
+  color:white;
+  text-decoration:none;
+  margin:8px 10px;
+  font-weight:bold;
+  display:inline-block;
+}
 
-    nav a:hover {
-      color: #19ff4a;
-    }
+.hero{
+  background:white;
+  text-align:center;
+  padding:70px 20px;
+}
 
-    .hero {
-      min-height: 90vh;
-      display: flex;
-      align-items: center;
-      text-align: center;
-      padding: 70px 20px;
-      background:
-        radial-gradient(circle at center, #123d1d 0%, #050505 55%);
-    }
+.hero h2{
+  color:#071426;
+  font-size:32px;
+  margin-bottom:15px;
+}
 
-    .hero-content {
-      max-width: 900px;
-      margin: auto;
-    }
+.hero p{
+  max-width:750px;
+  margin:auto;
+  color:#555;
+}
 
-    .hero h1 {
-      font-size: clamp(42px, 8vw, 78px);
-      line-height: 1.05;
-      color: #19ff4a;
-      margin-bottom: 20px;
-    }
+.button{
+  display:inline-block;
+  margin-top:25px;
+  padding:13px 25px;
+  background:#20b84b;
+  color:white;
+  text-decoration:none;
+  border-radius:6px;
+  font-weight:bold;
+}
 
-    .hero h2 {
-      font-size: clamp(20px, 4vw, 32px);
-      margin-bottom: 20px;
-    }
+section{
+  padding:60px 20px;
+}
 
-    .hero p {
-      max-width: 700px;
-      margin: auto;
-      color: #cccccc;
-      font-size: 17px;
-    }
+.container{
+  max-width:1000px;
+  margin:auto;
+}
 
-    .buttons {
-      margin-top: 35px;
-    }
+h2{
+  text-align:center;
+  color:#071426;
+  margin-bottom:25px;
+  font-size:30px;
+}
 
-    .btn {
-      display: inline-block;
-      padding: 14px 25px;
-      margin: 7px;
-      border-radius: 6px;
-      text-decoration: none;
-      font-weight: bold;
-    }
+.about{
+  background:white;
+}
 
-    .btn-green {
-      background: #19ff4a;
-      color: #000;
-    }
+.about h3{
+  color:#20b84b;
+  margin-top:25px;
+  margin-bottom:10px;
+}
 
-    .btn-outline {
-      border: 1px solid #19ff4a;
-      color: #19ff4a;
-    }
+.services{
+  background:#eef3f6;
+}
 
-    section {
-      padding: 80px 20px;
-    }
+.cards{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:20px;
+}
 
-    .container {
-      max-width: 1100px;
-      margin: auto;
-    }
+.card{
+  background:white;
+  padding:25px;
+  border-radius:10px;
+  box-shadow:0 3px 12px rgba(0,0,0,0.1);
+}
 
-    .section-title {
-      text-align: center;
-      margin-bottom: 45px;
-    }
+.card h3{
+  color:#071426;
+  margin-bottom:10px;
+}
 
-    .section-title h2 {
-      font-size: 38px;
-      color: #19ff4a;
-      margin-bottom: 10px;
-    }
+.partners{
+  background:white;
+  text-align:center;
+}
 
-    .section-title p {
-      color: #aaa;
-    }
+.partner-box{
+  max-width:700px;
+  margin:auto;
+  padding:25px;
+  background:#f2f6f4;
+  border-radius:10px;
+}
 
-    .about {
-      background: #0b0b0b;
-    }
+.contact{
+  background:#071426;
+  color:white;
+  text-align:center;
+}
 
-    .about-grid,
-    .service-grid,
-    .contact-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 25px;
-    }
+.contact h2{
+  color:white;
+}
 
-    .card {
-      background: #111111;
-      padding: 30px;
-      border: 1px solid #222;
-      border-radius: 10px;
-      transition: 0.3s;
-    }
+.contact p{
+  margin:12px 0;
+}
 
-    .card:hover {
-      border-color: #19ff4a;
-      transform: translateY(-5px);
-    }
+.contact a{
+  color:#20d65a;
+  text-decoration:none;
+  font-weight:bold;
+}
 
-    .card h3 {
-      color: #19ff4a;
-      margin-bottom: 15px;
-    }
+footer{
+  background:#030a12;
+  color:white;
+  text-align:center;
+  padding:20px;
+}
 
-    .card p {
-      color: #cccccc;
-    }
+@media(max-width:600px){
+  header h1{
+    font-size:24px;
+  }
 
-    .services {
-      background: #050505;
-    }
-
-    .service-card {
-      min-height: 220px;
-    }
-
-    .number {
-      font-size: 35px;
-      font-weight: bold;
-      color: #19ff4a;
-      margin-bottom: 15px;
-    }
-
-    .partners {
-      background: #0b0b0b;
-    }
-
-    .partners-list {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 15px;
-    }
-
-    .partner {
-      padding: 20px;
-      background: #111;
-      border-left: 3px solid #19ff4a;
-      color: #ddd;
-    }
-
-    .contact-card {
-      text-align: center;
-    }
-
-    .contact-card a {
-      color: #19ff4a;
-      text-decoration: none;
-    }
-
-    footer {
-      text-align: center;
-      padding: 30px 20px;
-      background: #000;
-      border-top: 1px solid #222;
-      color: #999;
-    }
-
-    footer strong {
-      color: #19ff4a;
-    }
-
-    @media (max-width: 800px) {
-      nav {
-        display: none;
-      }
-
-      .about-grid,
-      .service-grid,
-      .contact-grid,
-      .partners-list {
-        grid-template-columns: 1fr;
-      }
-
-      .hero {
-        min-height: 80vh;
-      }
-    }
-  </style>
+  .hero h2{
+    font-size:27px;
+  }
+}
+</style>
 </head>
 
 <body>
 
 <header>
-  <div class="nav">
-    <div class="logo">
-      SPARKLIN
-      <span>GLOBAL SYNERGY</span>
-    </div>
 
-    <nav>
-      <a href="#home">Home</a>
-      <a href="#about">About</a>
-      <a href="#services">Services</a>
-      <a href="#partners">Partners</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </div>
+  <img id="companyLogo"
+       alt="Sparklin Global Synergy Logo"
+       class="logo">
+
+  <h1>Sparklin Global Synergy</h1>
+  <p>Contracts & Service Delivery Solutions</p>
+
 </header>
 
+<nav>
+  <a href="#home">Home</a>
+  <a href="#about">About Us</a>
+  <a href="#services">Services</a>
+  <a href="#partners">Partner With Us</a>
+  <a href="#contact">Contact</a>
+</nav>
+
 <section class="hero" id="home">
-  <div class="hero-content">
-
-    <h1>Sparklin Global Synergy</h1>
-
-    <h2>Excellence. Innovation. Service.</h2>
+  <div class="container">
+    <h2>Welcome to Sparklin Global Synergy</h2>
 
     <p>
-      Delivering reliable contract and service solutions that enhance
-      operational efficiency, maximize value and contribute to sustainable
-      development across Nigeria.
+      We provide quality contract and service delivery solutions
+      designed to enhance operational efficiency, maximize value,
+      and contribute to sustainable development.
     </p>
 
-    <div class="buttons">
-      <a href="#services" class="btn btn-green">Our Services</a>
-      <a href="#contact" class="btn btn-outline">Contact Us</a>
-    </div>
-
+    <a href="#contact" class="button">Contact Us</a>
   </div>
 </section>
 
 <section class="about" id="about">
   <div class="container">
 
-    <div class="section-title">
-      <h2>About Us</h2>
-      <p>Who we are and what drives us.</p>
-    </div>
+    <h2>About Us</h2>
 
-    <div class="about-grid">
+    <p>
+      Sparklin Global Synergy is committed to delivering superior
+      quality services that meet the evolving needs of our clients
+      through dedication, innovation, and strategic partnerships.
+    </p>
 
-      <div class="card">
-        <h3>Our Mission</h3>
-        <p>
-          Our mission is to enhance operational efficiency, maximize value,
-          and contribute to sustainable development. To deliver superior
-          quality services that meet the evolving needs of our clients
-          through dedication, innovation, and strategic partnerships.
-        </p>
-      </div>
+    <h3>Our Mission</h3>
 
-      <div class="card">
-        <h3>Our Vision</h3>
-        <p>
-          To be the benchmark of excellence and innovation in providing
-          contracts and service delivery solutions, driving progress and
-          efficiency across Nigeria's public and private sectors.
-        </p>
-      </div>
+    <p>
+      Our mission is to enhance operational efficiency, maximize
+      value, and contribute to sustainable development. To deliver
+      superior quality services through dedication, innovation,
+      and strategic partnerships.
+    </p>
 
-      <div class="card">
-        <h3>Our Commitment</h3>
-        <p>
-          We are committed to professionalism, innovation, efficiency and
-          building strategic relationships that create lasting value for
-          our clients and partners.
-        </p>
-      </div>
+    <h3>Our Vision</h3>
 
-    </div>
+    <p>
+      To be the benchmark of excellence and innovation in providing
+      contracts and service delivery solutions, driving progress
+      and efficiency across industries.
+    </p>
+
   </div>
 </section>
 
 <section class="services" id="services">
   <div class="container">
 
-    <div class="section-title">
-      <h2>Our Services</h2>
-      <p>Professional solutions designed around our clients' needs.</p>
-    </div>
+    <h2>Our Services</h2>
 
-    <div class="service-grid">
+    <div class="cards">
 
-      <div class="card service-card">
-        <div class="number">01</div>
-        <h3>Supply Chain Management</h3>
-        <p>
-          Efficient supply chain solutions designed to improve operations,
-          coordination, value creation and service delivery.
-        </p>
+      <div class="card">
+        <h3>Contract Services</h3>
+        <p>Professional contract solutions designed to meet the requirements of our clients.</p>
       </div>
 
-      <div class="card service-card">
-        <div class="number">02</div>
-        <h3>Real Estate & Facility Management</h3>
-        <p>
-          Professional real estate and facility management solutions focused
-          on property value, efficiency and reliable service.
-        </p>
+      <div class="card">
+        <h3>Service Delivery</h3>
+        <p>Reliable and efficient service delivery focused on quality and customer satisfaction.</p>
       </div>
 
-      <div class="card service-card">
-        <div class="number">03</div>
-        <h3>Auction & Disposal Services</h3>
-        <p>
-          Structured auction and disposal services designed to support
-          transparent and efficient asset disposal.
-        </p>
+      <div class="card">
+        <h3>Consulting</h3>
+        <p>Strategic solutions that help organizations improve efficiency and achieve their objectives.</p>
+      </div>
+
+      <div class="card">
+        <h3>Strategic Partnerships</h3>
+        <p>Building strong partnerships that create sustainable value and long-term opportunities.</p>
       </div>
 
     </div>
@@ -377,93 +286,60 @@
 <section class="partners" id="partners">
   <div class="container">
 
-    <div class="section-title">
-      <h2>Our Partners</h2>
-      <p>Working together to deliver effective solutions.</p>
+    <h2>Partner With Us</h2>
+
+    <div class="partner-box">
+      <p>
+        We welcome opportunities to build strong and strategic
+        partnerships with organizations and individuals who share
+        our commitment to quality, innovation and sustainable growth.
+      </p>
     </div>
 
-    <div class="partners-list">
-
-      <div class="partner">Nigerian Communications Commission (NCC)</div>
-
-      <div class="partner">Accural Group</div>
-
-      <div class="partner">
-        Federal Ministry of Water Resources & Sanitation
-      </div>
-
-      <div class="partner">A Karama & Sons Nig. Ltd</div>
-
-      <div class="partner">
-        Eco Sustainable Works Nigeria Ltd
-      </div>
-
-      <div class="partner">Maishara Company Limited</div>
-
-      <div class="partner">
-        Center for Renewable Energy and Action on Climate Change
-      </div>
-
-    </div>
   </div>
 </section>
 
-<section id="contact">
+<section class="contact" id="contact">
   <div class="container">
 
-    <div class="section-title">
-      <h2>Contact Us</h2>
-      <p>Let's discuss how we can work together.</p>
-    </div>
+    <h2>Contact Us</h2>
 
-    <div class="contact-grid">
+    <p>We would be happy to discuss your business needs with you.</p>
 
-      <div class="card contact-card">
-        <h3>Head Office</h3>
-        <p>
-          No. 13 Garba Koko Road,<br>
-          NDC, Kaduna,<br>
-          Kaduna State, Nigeria
-        </p>
-      </div>
+    <p>
+      📞 Phone:
+      <a href="tel:+2349133301185">+234 913 330 1185</a>
+    </p>
 
-      <div class="card contact-card">
-        <h3>Phone</h3>
-        <p>
-          <a href="tel:08163561273">08163561273</a><br>
-          <a href="tel:09133301185">09133301185</a>
-        </p>
-      </div>
-
-      <div class="card contact-card">
-        <h3>Email</h3>
-        <p>
-          <a href="mailto:sparklinglobalsynergyltd@gmail.com">
-            sparklinglobalsynergyltd@gmail.com
-          </a>
-        </p>
-      </div>
-
-    </div>
-
-    <div class="buttons" style="text-align:center;">
-      <a
-        href="https://wa.me/2349133301185"
-        class="btn btn-green"
-        target="_blank">
-        Chat on WhatsApp
+    <p>
+      📱 WhatsApp:
+      <a href="https://wa.me/2349133301185">
+        Chat with us on WhatsApp
       </a>
-    </div>
+    </p>
 
   </div>
 </section>
 
 <footer>
-  <p>
-    © 2026 <strong>Sparklin Global Synergy</strong>.
-    All Rights Reserved.
-  </p>
+  <p>© 2026 Sparklin Global Synergy. All Rights Reserved.</p>
 </footer>
+
+<script>
+fetch("https://api.github.com/repos/abdulazee-dot/Sparklin-Global-Synergy/contents/")
+  .then(response => response.json())
+  .then(files => {
+    const logoFile = files.find(file =>
+      file.name.startsWith("IMG-20260818-WA000") &&
+      /\.(jpg|jpeg|png|webp)$/i.test(file.name)
+    );
+
+    if (logoFile) {
+      document.getElementById("companyLogo").src = logoFile.download_url;
+    }
+  })
+  .catch(error => console.log("Logo loading error:", error));
+</script>
 
 </body>
   </html>
